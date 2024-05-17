@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Management System User Manual</title>
+    <style>
+        /* Basic styling for dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 20px;
+        }
+        h1 {
+          font-size: 2em;
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+        }
+        h1 img {
+          width: 50px;
+          height: 50px;
+          margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1><img src="./dms_login.png" alt="Delivery Management System Logo"> Welcome to the Delivery Management System (DMS) User Manual!</h1>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#intro">1. Introduction</a></li>
+        <li><a href="#start">2. Getting Started</a></li>
+        <div class="dropdown">
+            <li class="dropbtn">3. Admin Dashboard Overview</li>
+            <div class="dropdown-content">
+                <li><a href="#order-management">3.1. Order Management</a></li>
+                <li><a href="#fleet-management">3.2. Fleet Management</a></li>
+                <li><a href="#employee-management">3.3. Employee Management</a></li>
+                <li><a href="#tracking-order">3.4. Tracking Order</a></li>
+                <li><a href="#customer-management">3.5. Customer Management</a></li>
+            </div>
+        </div>
+        <li><a href="#report">4. Reporting Issues</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="intro">Introduction</h2>
+    <p>The Delivery Management System (DMS) is a comprehensive platform designed to 
+        streamline the process of placing, tracking, and managing deliveries. Whether you're a customer, 
+        delivery driver, or administrator, this user manual will guide you through the functionalities of 
+        the system to ensure a seamless experience.</p>
+
+    <h2 id="start">Getting started</h2>
+    <h4>Installation</h4>
+    <p>To install, navigate into the folder and run npm install.<br/>After installation connection delivery_management.sql database to server. Then run the following command npm start.<br/>
+        To access the DMS, visit http://localhost:3000 from your device. The login screen will appear.
+    </p>
+    <hr>
+
+    <h2 id="order-management">Order Management</h2>
+    <p>Order management allows admin to create, track, and manage orders efficiently.</p>
+    <p>Features:</p>
+    <ul>
+        <li>Create new orders</li>
+        <li>Edit existing orders</li>
+        <li>Cancel orders</li>
+        <li>View order history</li>
+    </ul>
+
+    <h2 id="fleet-management">Fleet Management</h2>
+    <p>Fleet management helps in managing delivery vehicles and drivers.</p>
+    <p>Features:</p>
+    <ul>
+        <li>Add new vehicles</li>
+        <li>Assign drivers to vehicles</li>
+        <li>Track vehicle maintenance</li>
+        <li>Monitor fuel consumption</li>
+    </ul>
+
+    <h2 id="employee-management">Employee Management</h2>
+    <p>Employee management module is used to manage delivery staff and other personnel.</p>
+    <p>Features:</p>
+    <ul>
+        <li>Add new employees</li>
+        <li>Assign roles and permissions</li>
+        <li>Monitor employee performance</li>
+        <li>Manage payroll</li>
+    </ul>
+
+
+    <h2 id="tracking-order">Tracking Order</h2>
+    <p>Tracking order feature enables users to track the status and location of orders in real-time.</p>
+    <p>Features:</p>
+    <ul>
+        <li>Real-time order tracking</li>
+        <li>Delivery status updates</li>
+        <li>Estimated time of arrival (ETA)</li>
+        <li>Notifications for delays or changes</li>
+    </ul>
+
+    <h2 id="customer-management">Customer Management</h2>
+    <p>Customer management allows users to manage customer information and interactions.</p>
+    <p>Features:</p>
+    <ul>
+        <li>Add new customers</li>
+        <li>View customer details</li>
+        <li>Manage customer accounts</li>
+        <li>Track customer orders and feedback</li>
+    </ul>
+
+    <hr>
+    <h2 id="report">Report Issues</h2>
+    <p>In the event of any issues or concerns during the delivery process, customers can report them directly through the DMS.
+        Our support team will promptly address any issues and provide assistance as needed.</p>
+        <hr>
+    
+</body>
+</html>
